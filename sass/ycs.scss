@@ -1,0 +1,268 @@
+@import "base";
+
+// ignore user
+// tags for people
+
+@include keyframeTransform(hand, translateY(0px), translateY(7px));
+
+.forum_267 {
+
+  // on all links, add a hand that bobs up and down because its so fucking awesome looking
+  a:hover, .rating_buttons li:hover {
+    position: relative;
+  }
+
+  a:hover:before, .rating_buttons li:hover:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAAAAACdnZ2cnJydnZ0AAACcnJz///96iO+2AAAABHRSTlOzAAAAvFSH7gAAAGhJREFUeF5disENAjEMBJcOWKQ0YDoILSTwhQPjBjiugYS0jx1+7GM1Gg1I1RtJMNnoAQcbrax6h4tYh10mNEzxedWfqd7YFpBlQltPGVY8Wdw8ntt4LyJIWs5V8hFMqleA+N8O+3iSX+SpIGJxGb9xAAAAAElFTkSuQmCC) no-repeat;
+    display: inline-block;
+    top: 0;
+    left: -16px;
+    @include animation(hand 0.5s linear infinite alternate);
+  }
+
+  // fix hand breaking on quote/report/etc links
+  .alertbutton a, .postbuttons a, .thread .icon a {
+    display: inline-block;
+  }
+
+  // replace mod/admin stars with rupees
+  #thread dl.userinfo dt.author.role-mod {
+    background-image: url(data:image/gif;base64,R0lGODlhCgAQAJEDAO3+/hWP5i5LYAAAACH5BAEAAAMALAAAAAAKABAAAAItnCdyK5CLAAhBmSZpja3qlFGCiH1k6FWleE6sOrmjqjmeMmvbpVtH8oAgfIMCADs=);
+    padding-left: 14px;
+  }
+
+  #thread dl.userinfo dt.author.role-admin {
+    background-image: url(data:image/gif;base64,R0lGODlhCgAQAJEDANtHSpkgJf/S0gAAACH5BAEAAAMALAAAAAAKABAAAAItnBdxG5KLhABAmSZpja3qlFGBiH1k6FWleE6sOrmjqjmeMmvbpVtH8oAgfIMCADs=);
+    padding-left: 14px;
+  }
+
+  // replace sticky icon with mushroom and also to the OP of a thread
+  .thread td.title_sticky a.thread_title, .author.op:before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEX///8AAABSxhj///9KjO+oAAAAAXRSTlMAQObYZgAAAFtJREFUeF4lxLERQDAYgNFPkTMBOrNkhBT+lpohWMISNGkoXVZQ6E3hcpc7iULzoGgga3eNis5QBjtTr+tGZ8PD5OL7M7p4MNiw0Iv0iL+Fyt8XeUonKiVDJqI/X4gkPOes9IQAAAAASUVORK5CYII=) no-repeat;
+    padding-left: 20px;
+  }
+
+  .author.op:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    padding: 0 4px 0 0;
+    vertical-align: bottom;
+  }
+
+  // remove stupid shit from postdate links
+  td.postdate a {
+    border: none;
+    box-shadow: none;
+    @include border-radius(0);
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    padding: 0;
+    margin-right: 4px;
+    text-shadow: none;
+    color: transparent;
+
+    //box-shadow: none;
+    //text-shadow: none !important;
+    //border-radius: 0;
+    //color: transparent !important;
+    //height: 16px;
+    //width: 16px;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  // change last read icon to a start button
+  #thread td.postdate .lastseen_icon {
+    background: url(data:image/gif;base64,R0lGODlhEAANAKIHAP///zkIAGMQCNY5MYwYELUpIe+cnAAAACH5BAEAAAcALAAAAAAQAA0AAANKeLrSESuqNmp98ohhjK0FxAjdZz2QAKwrAbjAwAZAo94rDtGEjNfAHQ/IqrkeOR9Rd0ARBM8nVIBZBAgFU4EgijywhW0100R1FQkAOw==) no-repeat center center;
+    margin-right: 4px;
+
+    img {
+      display: none;
+    }
+  }
+
+  // change the post ? icon to a ? block and flip it for the reverse
+  td.postdate a.user_jump {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJ1BMVEX////YsBiISBBgKADQqCCwgBjgsBjIoBiYYBj46Ij4+PjowDD40Chwesi1AAAAAXRSTlMAQObYZgAAAH9JREFUeF4tyDEKwjAYhuFPPMEPWYpOf5B2FIrOopnsVIO6i2To6KAHyJIruHb8ztJD2QTf6eHFQnLmgBW/c9ML1T4EkZNHFTj39FgPGWOBakY3sBeOEd1DzywQIXmMeIshtY64iSPrj0Vv3EUL3P/cd1dy4y2alFSbZLFsS9sfPcstFrSXD2YAAAAASUVORK5CYII=) no-repeat center center;
+
+    &[title^="R"] {
+      @include rotate(180deg);
+    }
+  }
+
+  // change "1" (added by SALR) to 1P */
+  td.postdate a[href*="action=showpost"] {
+    background: url(data:image/gif;base64,R0lGODlhEAAKAKIFABgYGPj4+Li4uNjY2ICAgAAAAAAAAAAAACH5BAEAAAUALAAAAAAQAAoAAAMuCLrcBSNIJaQNK05QbxDM1inSABSPWGomCqgecaYYJxG4jNLUpuw8Gwa4azCICQA7) no-repeat center center;
+  }
+
+  // make the # thing a picture of link */
+  td.postdate a[href^="#"] {
+    background: url(data:image/gif;base64,R0lGODlhDwAQAKIAAAAAAJlOAOqeIojYAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAPABAAAANDCKrTvhC4OaKQIet61dVgAHSjEAiDgJrqop4nG0NqbZtQ88aNCIS2Hsi0mRBjRKJuB8ughruj0vEBUmg2nyai2HIBCQA7) no-repeat center center;
+  }
+
+  // add byob console hammock to top */
+  #copyright:before {
+    content: '';
+    display: inline-block;
+    background: url(http://pasta.rd14.net/2014-04/hammock4.gif) no-repeat left top;
+    pointer-events: none;
+    position: absolute;
+    //top: 5px;
+    //left: 10px;
+    top: -35px;
+    left: 0;
+    width: 250px;
+    height: 201px;
+    z-index: -1;
+  }
+
+  // move nav out of the way of hammock
+  #navigation, #nav_purchase {
+    margin-left: 235px;
+  }
+
+  //// fix byob console showing up in the way on new reply/thread
+  //&.newreply .standard, &.newthread .standard, form[action="poll.php"], #filter.open {
+  //  position: relative;
+  //  z-index: 2;
+  //}
+  //
+  //// fix byob console showing up in front of breadcrumbs
+  //.breadcrumbs {
+  //  position: relative;
+  //  z-index: 2;
+  //  display: inline-block;
+  //}
+  //
+  //// fix byob console showing up in front of top nav
+  //#nav_purchase, #navigation {
+  //  position: relative;
+  //  z-index: 2;
+  //}
+
+  // quote bans/probations get dead mario on the sides */
+  //.postbody .bbc-block b a[href^="/banlist.php?userid="] {
+  //  position: relative;
+  //
+  //  &:before, &:after {
+  //    content: '';
+  //    background: url(data:image/gif;base64,R0lGODlhDwAOAJEDAKx8AP+kQPg4AAAAACH5BAEAAAMALAAAAAAPAA4AAAI5nC2ZxxEKnXEOBHszrRZ3TAHiJmJGOV4lM4zoxbZgyEaUcpQJugOnLhD1fDLhQ/BYFQGQYU7YFBkKADs=) top left no-repeat;
+  //    width: 15px;
+  //    height: 14px;
+  //    display: inline-block;
+  //    position: absolute;
+  //  }
+  //
+  //  &:before {
+  //    left: -16px;
+  //  }
+  //}
+
+  // give submit button a A and preview button a B */
+  .postbuttons {
+    input {
+      padding-left: 20px;
+
+      &[name="submit"] {
+        background: url(data:image/gif;base64,R0lGODlhDQANAKIHADFa9wgQSiFCzhAplAgha////7W99wAAACH5BAEAAAcALAAAAAANAA0AAANEeHrUEWs1QOmTwJhKBWQaIBRCBRHCRhWcR1QjQHbB25HFQNtp4auuUkyXEwwgAcAgpyx+AgOjcEA4Lh5RgfESOTy+kQQAOw==) 4px center no-repeat #ddd;
+      }
+
+      &[name="preview"] {
+        background: url(data:image/gif;base64,R0lGODlhDQANAKIHAEqtIRgxADF7EP///ylCEClaCK3enAAAACH5BAEAAAcALAAAAAANAA0AAANBeHrUEWs1QOmTwJhKBWSaMIyFxQibWKiAR1Qq68LjULbB29nF8LqC3coHKEACOxJOEVgVGj/j4rESCIyfyGMbSQAAOw==) 4px center no-repeat #ddd;
+      }
+    }
+  }
+
+  // added fzero gx icon to ignored users */
+  #thread tr.ignored dl.userinfo, #thread table.ignored td.postbody a {
+    background: url(data:image/gif;base64,R0lGODlhFAAUAKIHAAMBBcWNUby6w3BsbYRULlUyIyYeJgAAACH5BAEAAAcALAAAAAAUABQAAANhaLfcviCC0YyM9IwbjeegZIXgR56CQHosN2ylV5jnxY4nXIPFMuAA4KXnsBl+nIcGZhDoJI8NblQoiB4WXCFASDoGs2BgLMw0ZtsxoepS+AyE8Zi9ohLuVeGqsNZzaDsRCQA7) no-repeat 0 0;
+    height: 20px;
+    display: inline-block;
+    padding-left: 24px;
+  }
+
+  // fixed spoiler tags */
+  .bbc-spoiler {
+    text-shadow: none;
+    color: transparent;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAAAKCAMAAAAtvZhVAAAANlBMVEX/AAD/////AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAAzfBn8AAAAEXRSTlMAAIBAwCBg8BCgkDCwcFDg0Ku7zC0AAAEeSURBVHheVdJZjsQgDARQ4wWTkKXr/pcd4zDdpH6CVOhJDqZIZaEIj1Sq8TmNyOJMfdet0ohl2/O6kfCIPX2pbOVJ1M1xDw4jSoqINxIoCaCuyQkyO5FCiDEiT18U8uMqHJIcjURnN67kDpxENjmldgIyOaZI9KXYm/vcO7YXR46e3A6/iL4c0YZ94bIPZOU6zg5vc9jBqQefnH2Aoy0cQ3/D8uzLhvLlNlS5UQfHzIMLoz0ctR24X9wxOWWW2RdeOMfIZx32wJHcw0B+nILXYWe/cBVXPm5fOHOcyV02KvvnZIPbykVv0Xdp/5zeNH8xMnn7hNvgFA4cy6J4XxeFs9/Wp+B8us6VOJNbGmcxrrmttX3XuEp7rbE8/bLGf17DEZFkjzKjAAAAAElFTkSuQmCC) left center repeat-x #fff;
+    outline: 1px solid red;
+
+    &.reveal li, &.reveal, &.stay {
+      background: #fff;
+      outline: none;
+      color: #111;
+    }
+  }
+
+  // rare cake */
+  #thread .post .quote_link[href$="420"] {
+    position: static;
+
+    &:after {
+      content: 'You Found: ' url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXBAMAAAAMzfkgAAAAJFBMVEX////39/fnxpRKORhCQkrva7X3QkKUlJxKISG9vcaEISFzc4RR+YyQAAAAAXRSTlMAQObYZgAAAKpJREFUeF6Fy7EKwjAQx+GDdugaUMS1TyAW9w6BPkEqPkAO7VZQQu3SQSRrQZC8gJSMXXw9z9jY4uJv+MPHcTAUaZiku2aCK47HSEvcN19ZmRdeXKPI8eIQ8o+61CEzZ5SIHXdgbG4faHckAmUKe2C3FHjJfDMS+5V5ox20UC1N5VQu655+62dLCjPVx8rc+7giBdlJiK1SNEeAYCN8CWkd+/4pGQOAESt4AQWWPMukF4bRAAAAAElFTkSuQmCC) ' Magic Cake (Very Rare)';
+      margin: 0 0 0 100px;
+      display: inline-block;
+      position: absolute;
+      white-space: nowrap;
+      vertical-align: top;
+    }
+  }
+
+}
+
+// vlc
+.forum_219 #thread .userid-17106 dt.author {
+  padding-left: 18px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACGUlEQVR4Xp3QyWsTbwDH4c87M5lMkkkmUyEt6eYSi1q0qHWhsQouFSkEbaVWvHhwOUih9NSCPxA86Uk9WBE8VTx4aMWK4H4oiFDEVNDWupJu0JhYjfWXrTPe9GAX6+cPeOD7Zb6iJ7XT0ePKGf6l601myUQrdrwNu2u/dxlzJDFHVll4t1S8FjtYib18e92iAXvLiUj8wB1G62+TqT4WWRRw7mKn7vMX7LCFgpAceHRf+PylTj+zpDBLS6JXa4qNugKnuh5VhpKxfiPV/6gW6P0rwEgORoL9L/BFQTXAiMPYpDMC9C444fLhCtlnp/fKCtiABahu8FqZPVeOrHIsCExtaq2c2dAQyhtLmXHo5GWdrFFGrqq+/Et1y7p5gffXGk2v/bkxXdPGaKSbjwfv827fA97sukkq3IL8/2RDz6k15qxA7MbRbdrTnpiR/PCfw+VhRqhknCZZ1cSSNBTNhTr5qSMw9Dr2sH3rzj9O1BIDTfFpS/cPdBMISEgrwtjuAJIs8KQmKB3qQ7y6JX7k0QPZeDPwGEAAjD85K3ueXxhKvE2ERkagyA9uDRRF4HALZGHxLQHD41BcAkWrjViutiNUWNOeUwBcTFU5lUQoWAGmH9IpEHmQbBspZyM08BbB5lJwFYLQvpbltOmNwDMFQM/2NSsrgwA4y4HvAIAFiN9D8QA6IIOSvnvoF3Cv6+WwmU+zmDK+5CDAT+xlp+smUne2AAAAAElFTkSuQmCC) no-repeat left 2px;
+}
+
+// 3d browsing
+.forum_188 #thread .userid-182864 dl.userinfo dt.author {
+  color: rgba(0, 0, 0, 0.5);
+  //text-shadow: 2px 0px 1px #0FF, -2px 0px 1px #F00;
+  text-shadow: 4px 0px 1px #0FF, -2px 0px 1px #F00, -2px 0px 1px #F00, 4px 0px 1px #0FF
+}
+
+@include keyframes(freakFlagFly) {
+  0% {
+    padding: 0;
+  }
+  20% {
+    padding: 0;
+  }
+  80% {
+    padding: 50px 125px;
+  }
+  100% {
+    padding: 50px 125px;
+  }
+}
+
+// make fyad flags by spammers do stuff
+#flag_container img {
+  &[src$="?by=forums%20poster"], &[src$="?by=Shit%20Man"], &[src$="?by=Jingai%20Jigokumoto"] {
+    display: block;
+    @include box-sizing(border-box);
+    background: url(http://pasta.rd14.net/2014-03/flagSpammer3.gif) no-repeat #000;
+    @include background-size(100%);
+    width: 250px; /* Width of new image */
+    height: 100px; /* Height of new image */
+    @include animation(freakFlagFly 5s linear infinite alternate);
+  }
+}
+
+// fix images in avatars having empty space below them
+.title img {
+  vertical-align: bottom;
+}

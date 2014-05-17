@@ -1,0 +1,162 @@
+@import "base";
+
+/* copyright 2070 - obstipator . do not steal ! ! !
+ * http://forums.somethingawful.com/member.php?action=getinfo&userid=157805
+ * This has all the novelty game related cool shit for YCS
+ *
+ * I'd like to give a shoutout to all the videogame characters that come to life for my birthday.
+ *
+ * I also wanna thank the fuckmods for uploading this stylesheet and nothing else :twisted:
+ */
+
+
+$font: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+
+body.forum_267 {
+  //background-image: url('http://pasta.rd14.net/2014-04/background3.gif');
+  //background-color: #764;
+  //background-size:69% 69%;
+  background: url(http://pasta.rd14.net/2014-04/bgYoshi.jpg) #cedbf0;
+  //background: url(http://pasta.rd14.net/2014-04/bgYoshi3.jpg) #ddcef0;
+
+  // background: url(http://pasta.rd14.net/2014-04/bgYoshiBottom.png) repeat-x bottom;
+
+  //&:after {
+  //  content:'';
+  //  display: inline-block;
+  //  height: 110px;
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  background: url(http://pasta.rd14.net/2014-04/bgYoshiBottom.png) repeat-x bottom;
+  //}
+}
+
+.forum_267 {
+  #container {
+    //background: url(http://pasta.rd14.net/2014-04/bgYoshi.jpg);
+    background: url(http://pasta.rd14.net/2014-04/bgYoshiBottom.png) repeat-x bottom;
+    padding-bottom: 50px;
+  }
+
+  #copyright {
+
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+body#something_awful.forum_267 #copyright {
+  color: #fff;
+  text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;
+}
+
+// make links on background readable
+.forum_267 {
+  .breadcrumbs a.up, .breadcrumbs a.bclast, .breadcrumbs .online_users, .breadcrumbs .mainbodytextlarge b {
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0 4px;
+    background: #EEE;
+    border: 1px solid #666;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-right: 6px;
+
+    box-shadow: inset 1px 1px 1px #FFF,inset -1px -1px 1px #BBB, 2px 2px 2px rgba(26, 26, 26, 0.39);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  #thread {
+    clear: both;
+  }
+}
+
+// tables
+//.forum_267 {
+//  #thread table.post {
+//    //border-top-color: #9C7DB1;
+//    border-top-color: #C7AFD8;
+//
+//    tr {
+//    //  &.altcolor1 td {
+//    //    background-color: #ebe6f5;
+//    //
+//    //    &.userinfo, &.postdate {
+//    //      background-color: #e4dfed;
+//    //    }
+//    //  }
+//    //  &.altcolor2 td {
+//    //    //background-color: #f0e9f5;
+//    //    background-color: #e3ddf0;
+//    //
+//    //    &.userinfo, &.postdate {
+//    //      //background-color: #e9e1ed;
+//    //      background-color: #e3dfeb;
+//    //    }
+//    //  }
+//
+//      &.seen1 td {
+//        background-color: #d3c6ee;
+//
+//        &.userinfo, &.postdate {
+//          background-color: #cdbced;
+//        }
+//      }
+//      &.seen2 td {
+//        background-color: #e4dbf5;
+//
+//        &.userinfo, &.postdate {
+//          background-color: #ddd4ee;
+//        }
+//      }
+//    }
+//  }
+//}
+
+// PROBATION/BAN HEADSHOT
+.forum_267 .postbody b a[href^="/banlist.php?userid="]:after {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 43px;
+  vertical-align: middle;
+  padding: 0 4px 0 0;
+  background-image: url(http://i.somethingawful.com/images/n-banlist.png);
+  background-size: 100% 100%;
+  @include filter(drop-shadow(0 0 1px #000));
+}
+
+// REMOVES REGDATES, REMOVE THIS BLOCK TO BRING THEM BACK
+//.forum_267 #thread td.userinfo .registered {
+//  text-indent: 100%;
+//  white-space: nowrap;
+//  overflow: hidden;
+//  padding: 0px;
+//  font-family: Arial, sans-serif;
+//  font-size: 1px;
+//}
+
+.forum_267 img.bookmark {
+  height: 0;
+  width: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-image: url(http://i.somethingawful.com/images/n-star0.png);
+  background-size: 100%;
+}
+
+.forum_267 img.unbookmark {
+  height: 0;
+  width: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-image: url(http://i.somethingawful.com/images/n-star1.png);
+  background-size: 100%;
+}

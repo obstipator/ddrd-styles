@@ -1,0 +1,55 @@
+rupees = mod stars
+
+on hover over link, add ff4 cursor hand, which moves up and down
+a{position:relative;}a:hover:before{position:absolute;content:'';width:16px;height:16px;background:url(http://pasta.rd14.net/2014-03/hrefHover.png);display:inline-block;left:-16px}
+
+a:hover:before {
+position: absolute;
+content: '';
+width: 16px;
+height: 16px;
+background: url(http://pasta.rd14.net/2014-03/hrefHover.png);
+display: inline-block;
+left: -16px;
+-webkit-animation: hand 1s infinite alternate;
+
+
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform:translateY(-1px);
+  }
+  100% {
+    -webkit-transform:translateY(5px);
+  }
+}a{position:relative;}a:hover:before{position:absolute;content:'';width:16px;height:16px;background:url(http://pasta.rd14.net/2014-03/hrefHover.png);display:inline-block;left:-16px;-webkit-animation:hand 1s alternate}
+
+
+
+
+
+
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform:translateY(0px);
+  }
+  100% {
+    -webkit-transform:translateY(7px);
+  }
+}
+a:hover{position:relative;}
+a{position:relative;}a:hover:before{position:absolute;content:'';width:16px;height:16px;background:url(http://pasta.rd14.net/2014-03/hrefHover.png);display:inline-block;left:-16px;-webkit-animation:hand 0.5s linear infinite alternate;}
+
+
+
+mario star = bookmark
+
+links are red?
+
+posts are ff4 message boxes
+td{linear-gradient(#365576, #000)}
+
+pacman
+
+
+
+

@@ -1,0 +1,434 @@
+.forum_267, .forum_267 #forum td.lastpost {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #CCCCCC;
+}
+
+.forum_267 a {
+  color: #cffeff;
+}
+
+.forum_267 a:hover {
+  color: #8d8cd8;
+}
+
+.forum_267 #nav_purchase {
+  background-color: #855777;
+  color: #bfaef7;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.forum_267 #navigation {
+  background-color: #8d8cd8;
+  color: #855777;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.forum_267 #thread td.postbody, .forum_267 #thread dl.userinfo, .forum_267 #forum td.replies, .forum_267 #forum td.views, .forum_267 #forum td.author, .forum_267 #subforums, .forum_267 td.title div.title_pages, .forum_267 #forum td.lastpost, .forum_267 #forum td.lastpost div.date, .forum_267 #forums td.moderators a, .forum_267 #forums div.subforums, .forum_267 #forums div.subforums a, .forum_267 #info, .forum_267 #info a {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.forum_267 #forums td.icon, .forum_267 #forum td.star, .forum_267 #forums td.title, .forum_267 #forums td.moderators, .forum_267 #forum td.title, .forum_267 #forum td.icon, .forum_267 #forum td.icon2, .forum_267 #forum td.author, .forum_267 #forum td.replies, .forum_267 #forum td.views, .forum_267 #forum td.rating, .forum_267 #forum td.votes, .forum_267 #forum td.lastpost, .forum_267 #subforums td.title, .forum_267 #subforums td.topics, .forum_267 #subforums td.posts, .forum_267 .privfolder table.standard td, .forum_267 .privfolder table.standard tr td.altcolor2, .forum_267 #forum td.button_remove, .forum_267 #cpmain .private_messages table td.status, .forum_267 #cpmain .private_messages table td.icon, .forum_267 #cpmain .private_messages table td.title, .forum_267 #cpmain .private_messages table td.sender, .forum_267 #cpmain .private_messages table td.date {
+  background: #8d8cd8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8d8cd8), color-stop(100%, #855777));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8d8cd8 0%, #855777 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8d8cd8', endColorstr='#855777', GradientType=0);
+  /* IE6-9 */
+}
+
+.forum_267 #forum tr.seen td.icon, .forum_267 #forum tr.seen td.icon2, .forum_267 #forum tr.seen td.star, .forum_267 #forum tr.seen td.title, .forum_267 #forum tr.seen td.replies, .forum_267 #forum tr.seen td.author, .forum_267 #forum tr.seen td.views, .forum_267 #forum tr.seen td.votes, .forum_267 #forum tr.seen td.rating, .forum_267 #forum tr.seen td.lastpost {
+  background: #855777;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #855777 0%, #8d8cd8 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #855777), color-stop(100%, #8d8cd8));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #855777 0%, #8d8cd8 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #855777 0%, #8d8cd8 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #855777 0%, #8d8cd8 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #855777 0%, #8d8cd8 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#855777', endColorstr='#8d8cd8', GradientType=0);
+  /* IE6-9 */
+}
+
+body.forum_267 {
+  background-image: url("http://pasta.rd14.net/2014-04/background2.gif");
+}
+
+.forum_267.forumdisplay #forum.threadlist td.title.title_sticky div.info a.thread_title {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.forum_267 #thread td.postbody, .forum_267 #thread dl.userinfo, .forum_267 #forum td.replies, .forum_267 #forum td.views, .forum_267 #forum td.author, .forum_267 #subforums, .forum_267 a:visited, .forum_267 body,
+.forum_267 #forum td.lastpost {
+  color: #cffeff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.forum_267 td.title div.title_pages a {
+  color: #8d8cd8;
+  margin-right: 1px;
+  text-decoration: none;
+  padding: 1px 2px;
+}
+
+.forum_267 .usercp .navigation, .forum_267 .privfolder .navigation, .forum_267 .member_account_features .navigation, .forum_267 .bookmark_threads .navigation, .forum_267 .modifyprofile .navigation, .forum_267 .modifyoptions .navigation, .forum_267 .modifypassword .navigation, .forum_267 .listedit .navigation, .forum_267 .supportmail .navigation, .forum_267 .getinfo .navigation, .forum_267 .searchresults .navigation, .forum_267 .privmsg .navigation, .forum_267 .showthread .navigation, .forum_267 .forumdisplay .navigation, .forum_267 .newthread .navigation, .forum_267 .priv_sendprivmsg .navigation, .forum_267 .standarderror .navigation, .forum_267 .standardredirect .navigation, .forum_267 .online_users .navigation, .forum_267 .gloryhole .navigation, .forum_267 .modalert .navigation, .forum_267 .threads_editthread .navigation {
+  background: #8d8cd8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8d8cd8), color-stop(100%, #855777));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #8d8cd8 0%, #855777 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #8d8cd8 0%, #855777 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8d8cd8', endColorstr='#855777', GradientType=0);
+  /* IE6-9 */
+  border: 1px dotted;
+}
+
+.forum_267 div.breadcrumbs a.bclast {
+  color: #8d8cd8;
+}
+
+.forum_267 div.breadcrumbs a:visited {
+  color: #b1e7e8;
+}
+
+.forum_267 .thread .title a {
+  color: #E7FEFF;
+}
+.forum_267 .thread .title a:visited {
+  color: #b1e7e8;
+}
+
+.forum_267 #forum th, .forum_267 div.threadbar, .forum_267 div.forumbar, .forum_267 #forums th, .forum_267 #forums th a, .forum_267 #forums th a:visited, .forum_267 #pm th, .forum_267 #pm th a, .forum_267 #pm th a:visited, .forum_267 #pm th a:hover, .forum_267 #info th, .forum_267 #forum th a, .forum_267 #forum th a:visited, .forum_267 .standard h2, .forum_267 table.standard th, .forum_267 .standard h2 a, .forum_267 .standard h2 a:visited, .forum_267 .getinfo .standard th a, .forum_267 .getinfo .standard th a:visited, .forum_267 .gloryhole table.stats th, .forum_267 .privfolder tfoot tr td {
+  background-color: #855777;
+  color: #8d8cd8;
+}
+
+.forum_267 #filter {
+  background-image: url("http://i.somethingawful.com/images/n-back.jpg");
+  background-color: #8d8cd8;
+  color: #8d8cd8;
+}
+
+.forum_267 #filter div.toggle_tags {
+  background: none;
+  padding-left: 16px;
+  font-size: 11px;
+  color: #8d8cd8;
+  cursor: pointer;
+}
+
+.forum_267 #filter div.thread_tags div.remove_tag a {
+  background: none;
+  padding-left: 16px;
+  font-size: 11px;
+  color: #8d8cd8;
+}
+
+.forum_267 .online_users, .forum_267 .online_users a {
+  color: #C8A;
+  font-size: 9px;
+  font-weight: normal;
+}
+
+.forum_267 form#ac_timemachine {
+  padding-left: 0;
+  border: none;
+}
+
+.forum_267 #ac_timemachine {
+  background: none;
+  background-position: 0;
+}
+
+.forum_267 div.bottom_forms form#ac_timemachine {
+  position: relative;
+}
+
+.forum_267 table.standard td {
+  background: #4a4a4a;
+  border: 1px #f8f8f8 dashed;
+}
+
+.forum_267 table.standard th {
+  background: #111;
+  border: 2px #AAAAAA;
+}
+
+.forum_267 .modifyprofile .standard th, .forum_267 .modifyoptions .standard th, .forum_267 .modifypassword .standard h2, .forum_267 .listedit .standard h2, .forum_267 .member_account_features .standard h2, .forum_267 .dictionary_show .standard h2, .forum_267 .gloryhole .standard h2, .forum_267 .banlist .standard h2, .forum_267 .supportmail .standard h2, .forum_267 #main_full th, .forum_267 .getinfo .standard th, .forum_267 .newthread .standard h2, .forum_267 .online_users .standard h2, .forum_267 .newreply .standard h2, .forum_267 .editpost .standard h2, .forum_267 .threads_editthread .standard th {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.forum_267 div.threadbar, .forum_267 #subforums td, .forum_267 #forum, .forum_267 #forum th, .forum_267 #forum td, .forum_267 #filter, .forum_267 div.forumbar, .forum_267 #thread table.post, .forum_267 #thread td, .forum_267 #forums, .forum_267 #forums th, .forum_267 #forums td, .forum_267 #pm, .forum_267 #pm th, .forum_267 #pm td, .forum_267 #info, .forum_267 #info th, .forum_267 #info td, .forum_267 .searchresults table#main_full, .forum_267 .getinfo table, .forum_267 .privfolder table, .forum_267 .whoposted table.standard, .forum_267 #cpmain .private_messages table.standard {
+  border-spacing: 2px;
+  border: purple outset;
+}
+
+.forum_267 #forum {
+  background: #404;
+}
+
+.forum_267 #thread table.post {
+  border-spacing: 0px;
+}
+
+.forum_267 #forum td.title div.lastseen a {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #cffeff;
+  text-shadow: 0 0 #000;
+}
+
+.forum_267 td.title div.lastseen {
+  background: #35383B;
+  box-shadow: 0 0 0;
+  border: 1px dotted;
+}
+
+.forum_267 #forum td.title div.lastseen a.x {
+  background: #35383B;
+  color: #8d8cd8;
+}
+
+.forum_267 #forum tr td:nth-child(2), .forum_267 #forum tr.seen td:nth-child(2) {
+  border-width: 3px;
+}
+
+.forum_267 table.post tr.seen2 td.userinfo, .forum_267 table.post tr.seen2 td.postbody {
+  background-image: none;
+}
+
+.forum_267 table.post tr.seen2 td {
+  background-color: #855777;
+}
+
+.forum_267 table.post tr.seen2 td.userinfo, .forum_267 table.post tr.seen2 td.postdate {
+  background: #746;
+}
+
+.forum_267 #thread table.post td, .forum_267 #thread dl.userinfo dt.author, .forum_267 #thread dl.userinfo dd, .forum_267 #thread tr.postbar td, .forum_267 div.threadrate, .forum_267 div.subscribe, .forum_267 #thread table.post td.postdate {
+  color: #cffeff;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* NOTHING TO SEE HERE MOVE ALONG */
+.forum_267 #thread .seen1 dl.userinfo dt.author, .forum_267 #thread .seen2 dl.userinfo dt.author {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.forum_267 td.postdate a, .forum_267 td.postlinks ul.profilelinks li a, .forum_267 .dictnav a, .forum_267 #main_full td a, .forum_267 .searchresults #main_full tr .smalltext a, .forum_267 #content table.standard tr.altcolor2 td:last-child a, .forum_267 #main_full div.postinfo div.save-state a, .forum_267 #main_full tr.altcolor2 td:last-child a, .forum_267 .newthread #content table.standard tr:first-child a, .forum_267 .newreply #content table.standard tr:first-child a, .forum_267 .threads_editthread table#main_wide.standard td.user_loggedin a {
+  border: 0;
+  border-radius: 2px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.forum_267 table.post tr.seen1 td.userinfo, .forum_267 table.post tr.seen1 td.postbody {
+  background-image: none;
+}
+
+.forum_267 table.post tr.seen1 td.userinfo, .forum_267 table.post tr.seen1 td.postdate, .forum_267 table.post tr.seen1 td {
+  background-color: #856897;
+}
+
+.forum_267 table.post tr.seen1 td.userinfo, .forum_267 table.post tr.seen1 td.postdate {
+  background: #758;
+}
+
+.forum_267 .bbc-block blockquote {
+  color: #000;
+  margin: 0 40px 8px 0;
+  text-shadow: none;
+}
+
+.forum_267 #thread .bbc-block, .forum_267 #thread .seen1 .bbc-block, .forum_267 #thread .seen2 .bbc-block {
+  background-color: #CCCCCC;
+}
+
+.forum_267 .bbc-block a:visited {
+  color: #555;
+}
+
+.forum_267 .bbc-block a {
+  color: #000;
+}
+
+.forum_267 .bbc-block h4 {
+  color: #000;
+  font-style: normal;
+  text-shadow: 1px 1px 1px #BBB;
+}
+
+.forum_267 .postbody a.quote_link {
+  color: #000;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+.forum_267 .altcolor1 td.postbody, .forum_267 .altcolor1 td.userinfo, .forum_267 .altcolor2 td.postbody, .forum_267 .altcolor2 td.userinfo, .forum_267 table.post tr.seen1 td.userinfo, .forum_267 table.post tr.seen2 td.userinfo, .forum_267 table.post tr.seen1 td.postbody, .forum_267 table.post tr.seen2 td.postbody {
+  background-image: none;
+}
+
+.forum_267 .altcolor2, .forum_267 tr.altcolor2 td, .forum_267 td.altcolor2 {
+  background-color: #24859d;
+}
+
+.forum_267 .altcolor2 td.userinfo, .forum_267 .altcolor2 td.postdate {
+  background-color: #39a;
+}
+
+.forum_267 .altcolor1 td.userinfo, .forum_267 .altcolor1 td.postdate, .forum_267 .altcolor1, .forum_267 tr.altcolor1 td, .forum_267 td.altcolor1 {
+  background-color: #268ca6;
+}
+
+.forum_267 .altcolor1 td.userinfo, .forum_267 .altcolor1 td.postdate {
+  background-color: #39a;
+}
+
+.forum_267 .altcolor1 td.postdate a, .forum_267 .altcolor1 td.postlinks ul.profilelinks li a {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.forum_267 i, .forum_267 cite, .forum_267 em, .forum_267 var, .forum_267 address, .forum_267 dfn {
+  font-family: Courier, sans-serif;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.forum_267 td.postdate, .forum_267 #thread td.postdate {
+  font-style: normal;
+}
+
+.forum_267 .div.pages a, .forum_267 .div.pages a:hover, .forum_267 .div.pages span.disabled, .forum_267 .dictionary_show .letternav li a, .forum_267 .dictionary_show .letternav li a:hover, .forum_267 .messages_nextprev a, .forum_267 .modqueue #main_full div.pages a {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background: none;
+}
+
+.forum_267 div.breadcrumbs a.index {
+  background: none;
+}
+
+.forum_267 #thread table.post p.editedby span, .forum_267 #thread table.post p.attachment span {
+  font-style: normal;
+  color: #d8bbff;
+}
+
+.forum_267 #navigation, .forum_267 .navigation {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.forum_267 #thread td.postbody, .forum_267 #thread dl.userinfo, .forum_267 #forum td.replies, .forum_267 #forum td.author, .forum_267 #subforums, .forum_267 a:visited {
+  color: #a9ddde;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.forum_267 #mods, .forum_267 div.pages, .forum_267 #copyright, .forum_267 #forum span.pages, .forum_267 #thread div.postbar, .forum_267 td.postdate, .forum_267 #forum td.views, .forum_267 td.postlinks, .forum_267 #thread dl.userinfo dd, .forum_267 #thread tr.postbar td, .forum_267 div.threadrate, .forum_267 div.subscribe {
+  color: #cffeff;
+}
+
+.forum_267 table.standard th {
+  color: #bf4e87;
+  text-shadow: 1px 1px 1px #666;
+  outline-style: ridge;
+}
+
+.forum_267 a:visited:hover {
+  color: #8d8cd8;
+}
+
+.forum_267 .postbody b a[href^="/banlist.php?userid="]:after {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 43px;
+  vertical-align: middle;
+  padding: 0 4px 0 0;
+  background-image: url(http://i.somethingawful.com/images/n-banlist.png);
+  background-size: 100% 100%;
+}
+
+.forum_267 .postbuttons img[alt~=Post] {
+  height: 0;
+  width: 66px;
+  overflow: hidden;
+  padding-bottom: 31px;
+  background-image: url(http://i.somethingawful.com/images/n-post.png);
+}
+
+.forum_267 .postbuttons img[alt=Reply] {
+  height: 0;
+  width: 66px;
+  overflow: hidden;
+  padding-bottom: 31px;
+  background-image: url(http://i.somethingawful.com/images/n-reply.png);
+}
+
+.forum_267 .postbuttons img[alt=Quote] {
+  height: 0;
+  width: 64px;
+  overflow: hidden;
+  padding-bottom: 24px;
+  background-image: url(http://i.somethingawful.com/images/n-quote.png);
+}
+
+.forum_267 .postbuttons img[alt=Edit] {
+  height: 0;
+  width: 64px;
+  overflow: hidden;
+  padding-bottom: 24px;
+  background-image: url(http://i.somethingawful.com/images/n-edit.png);
+}
+
+.forum_267 .alertbutton > a > img {
+  height: 0;
+  width: 64px;
+  overflow: hidden;
+  padding-bottom: 24px;
+  background-image: url(http://i.somethingawful.com/images/n-report.png);
+}
+
+.forum_267 img.bookmark {
+  height: 0;
+  width: 30px;
+  overflow: hidden;
+  padding-bottom: 30px;
+  background-image: url(http://i.somethingawful.com/images/n-star0.png);
+}
+
+.forum_267 img.unbookmark {
+  height: 0;
+  width: 30px;
+  overflow: hidden;
+  padding-bottom: 30px;
+  background-image: url(http://i.somethingawful.com/images/n-star1.png);
+}
+
+.forum_267 #thread td.postlinks ul.postbuttons img {
+  box-shadow: 0 0 0;
+}
+
+.forum_267.newreply .standard, .forum_267.newthread .standard, .forum_267.editpost .standard {
+  background: #24859D;
+}

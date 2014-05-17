@@ -1,0 +1,76 @@
+/* copyright 2070 - obstipator . do not steal ! ! !
+ * http://forums.somethingawful.com/member.php?action=getinfo&userid=157805
+ * This has all the novelty game related cool shit for YCS
+ *
+ * I'd like to give a shoutout to all the videogame characters that come to life for my birthday.
+ *
+ * I also wanna thank the fuckmods for uploading this stylesheet and nothing else :twisted:
+ */
+body.forum_267 {
+  background: url(http://pasta.rd14.net/2014-04/bgYoshi.jpg) #cedbf0;
+}
+
+.forum_267 #container {
+  background: url(http://pasta.rd14.net/2014-04/bgYoshiBottom.png) repeat-x bottom;
+  padding-bottom: 50px;
+}
+.forum_267 #copyright a {
+  color: #fff;
+  font-weight: bold;
+}
+
+body#something_awful.forum_267 #copyright {
+  color: #fff;
+  text-shadow: 0 0 0.5em #000, 0 0 0.5em #000, 0 0 0.5em #000;
+}
+
+.forum_267 .breadcrumbs a.up, .forum_267 .breadcrumbs a.bclast, .forum_267 .breadcrumbs .online_users, .forum_267 .breadcrumbs .mainbodytextlarge b {
+  background: #FFF;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0 4px;
+  background: #EEE;
+  border: 1px solid #666;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin-right: 6px;
+  box-shadow: inset 1px 1px 1px white, inset -1px -1px 1px #bbbbbb, 2px 2px 2px rgba(26, 26, 26, 0.39);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.forum_267 #thread {
+  clear: both;
+}
+
+.forum_267 .postbody b a[href^="/banlist.php?userid="]:after {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 43px;
+  vertical-align: middle;
+  padding: 0 4px 0 0;
+  background-image: url(http://i.somethingawful.com/images/n-banlist.png);
+  background-size: 100% 100%;
+  -webkit-filter: drop-shadow(0 0 1px black);
+  -moz-filter: drop-shadow(0 0 1px black);
+  filter: drop-shadow(0 0 1px black);
+}
+
+.forum_267 img.bookmark {
+  height: 0;
+  width: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-image: url(http://i.somethingawful.com/images/n-star0.png);
+  background-size: 100%;
+}
+
+.forum_267 img.unbookmark {
+  height: 0;
+  width: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  background-image: url(http://i.somethingawful.com/images/n-star1.png);
+  background-size: 100%;
+}

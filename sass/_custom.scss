@@ -1,0 +1,68 @@
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+@mixin keyframeTransform($name, $from, $to) {
+  @-moz-keyframes #{$name} {
+    from {
+      -moz-transform: $from;
+      transform: $from;
+    }
+    to {
+      -moz-transform: $to;
+      transform: $to;
+    }
+  }
+  @-webkit-keyframes #{$name} {
+    from {
+      -webkit-transform: $from;
+      transform: $from;
+    }
+    to {
+      -webkit-transform: $to;
+      transform: $to;
+    }
+  }
+  @-o-keyframes #{$name} {
+    from {
+      -o-transform: $from;
+      transform: $from;
+    }
+    to {
+      -o-transform: $to;
+      transform: $to;
+    }
+  }
+  @keyframes #{$name} {
+    from {
+      @include transform($from);
+    }
+    to {
+      @include transform($to);
+    }
+  }
+}
+
+
+
+@mixin rotate($amt) {
+  @include transform(rotate($amt));
+  //-moz-transform: rotate($amt);
+  //transform: rotate($amt);
+}
+
+
+

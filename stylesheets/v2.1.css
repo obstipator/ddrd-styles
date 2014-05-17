@@ -1,0 +1,31 @@
+/**
+ * These are notes and codes of stuff that's broke in 2.0 but need to be fixed.
+ * Since the on-site css isn't on a repo (that i can access), it's gonna be dumb and stupid to do these
+ * fixes but whatevs. Here's all the scss for stuff. When you feel like fixing these things, you'll need
+ * to copy the current version of the live css, then use these notes/codes to fix up that version,
+ * then send it off to the powers that be.
+ */
+.forum_267 .thread td a.announcement {
+  background: url(data:image/gif;base64,R0lGODlhEAAQAKIGACkpKSkIhJSt/5Qx7/////+1hAAAAAAAACH5BAEAAAYALAAAAAAQABAAAANXaKrQvtC0QGuLgA7BxaDAkgVbx31BKJFc0J7pylKti07DRgt0nma5kin4I+VqJ9+EVGkyiyCH1LICFKyFrDWjkhQIDQIYQLhCrGIyWGw+f8XwNkb6WCQAADs=) no-repeat;
+  padding-left: 20px;
+}
+.forum_267 .quote_link[href$="420"] {
+  position: static;
+}
+.forum_267 .quote_link[href$="420"]:after {
+  content: "You Found: " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXBAMAAAAMzfkgAAAAJFBMVEX////39/fnxpRKORhCQkrva7X3QkKUlJxKISG9vcaEISFzc4RR+YyQAAAAAXRSTlMAQObYZgAAAKpJREFUeF6Fy7EKwjAQx+GDdugaUMS1TyAW9w6BPkEqPkAO7VZQQu3SQSRrQZC8gJSMXXw9z9jY4uJv+MPHcTAUaZiku2aCK47HSEvcN19ZmRdeXKPI8eIQ8o+61CEzZ5SIHXdgbG4faHckAmUKe2C3FHjJfDMS+5V5ox20UC1N5VQu655+62dLCjPVx8rc+7giBdlJiK1SNEeAYCN8CWkd+/4pGQOAESt4AQWWPMukF4bRAAAAAElFTkSuQmCC) " Magic Cake (Very Rare)";
+  margin: 0 0 0 100px;
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  vertical-align: top;
+}
+.forum_267 .thread_tags a.if {
+  display: inline-block;
+}
+.forum_267 .postbody a {
+  word-break: keep-all;
+}
+.forum_267 .bbc-spoiler a {
+  color: transparent;
+}

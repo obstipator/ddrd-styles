@@ -1,0 +1,42 @@
+body.forum_267 {
+  background-image: url(http://pasta.rd14.net/2014-05/2014-05-06_20-08-50.jpg) !important;
+}
+
+.forum_267 #forum td {
+  background-color: rgba(248, 248, 248, 0.7) !important;
+}
+.forum_267 table.post tr.seen2 td {
+  background-color: rgba(198, 218, 238, 0.7);
+}
+.forum_267 table.post tr.seen2 td.userinfo, .forum_267 table.post tr.seen2 td.postdate {
+  background-color: rgba(188, 212, 237, 0.7);
+}
+.forum_267 .altcolor1, .forum_267 tr.altcolor1 td, .forum_267 td.altcolor1 {
+  background-color: rgba(244, 244, 244, 0.7);
+}
+.forum_267 .altcolor1 td.userinfo, .forum_267 .altcolor1 td.postdate {
+  background-color: rgba(238, 238, 238, 0.7);
+}
+.forum_267 table.post tr.seen1 td {
+  background-color: rgba(219, 232, 245, 0.7);
+}
+.forum_267 table.post tr.seen1 td.userinfo, .forum_267 table.post tr.seen1 td.postdate {
+  background-color: rgba(212, 225, 238, 0.7);
+}
+.forum_267 .altcolor2, .forum_267 tr.altcolor2 td, .forum_267 td.altcolor2 {
+  background-color: rgba(232, 232, 232, 0.7);
+}
+.forum_267 .altcolor2 td.userinfo, .forum_267 .altcolor2 td.postdate {
+  background-color: rgba(232, 232, 232, 0.7);
+}
+.forum_267 .announcement {
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  font-size: 1px !important;
+}
+.forum_267 .announcement:after {
+  content: 'Uninstall DDRD Stylesheet Unfuckifier, you giant homo!';
+  visibility: visible;
+  font-size: 20px !important;
+}

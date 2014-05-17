@@ -1,0 +1,59 @@
+@import "base";
+
+$opacity: 0.7;
+
+body.forum_267 {
+  //background-image: url(http://pasta.rd14.net/2014-05/montage.jpg) !important;
+  background-image: url(http://pasta.rd14.net/2014-05/2014-05-06_20-08-50.jpg) !important;
+}
+
+.forum_267 {
+  #forum td {
+    background-color: rgba(#F8F8F8, $opacity) !important;
+  }
+
+  table.post tr.seen2 td {
+    background-color: rgba(#C6DAEE, $opacity);
+  }
+  table.post tr.seen2 td.userinfo, table.post tr.seen2 td.postdate {
+    background-color: rgba(#BCD4ED, $opacity);
+  }
+
+  .altcolor1, tr.altcolor1 td, td.altcolor1 {
+    background-color: rgba(#F4F4F4, $opacity);
+  }
+
+  .altcolor1 td.userinfo, .altcolor1 td.postdate {
+    background-color: rgba(#EEE, $opacity);
+  }
+
+  table.post tr.seen1 td {
+
+    background-color: rgba(#DBE8F5, $opacity);
+  }
+
+  table.post tr.seen1 td.userinfo, table.post tr.seen1 td.postdate {
+    background-color: rgba(#D4E1EE, $opacity);
+  }
+  .altcolor2, tr.altcolor2 td, td.altcolor2 {
+
+    background-color: rgba(#E8E8E8, $opacity);
+  }
+
+  .altcolor2 td.userinfo, .altcolor2 td.postdate {
+    background-color: rgba(#E8E8E8, $opacity);
+
+  }
+
+  .announcement {
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    font-size: 1px !important;
+  }
+  .announcement:after {
+    content: 'Uninstall DDRD Stylesheet Unfuckifier, you giant homo!';
+    visibility: visible;
+    font-size: 20px !important
+  }
+}
