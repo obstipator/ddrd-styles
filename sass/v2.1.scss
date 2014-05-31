@@ -58,4 +58,61 @@
 
   // change ratings?
 
+  // xboned image
+  // the people have spoken. they dont want this one
+  //.title .banlink img[src$="fi.somethingawful.com/images/title-banned.gif"] {
+  //  background: url(http://pasta.rd14.net/2014-05/banned.png) center no-repeat;
+  //  width: 0;
+  //  height: 0;
+  //  padding: 0 150px 102px 0;
+  //}
+
+  .title .banlink img[src$="fi.somethingawful.com/customtitles/title-probation.png"] {
+    background: url(http://pasta.rd14.net/2014-05/probotnik.png) center no-repeat;
+    width: 0;
+    height: 0;
+    padding: 0 150px 102px 0;
+  }
+
+  // respawn in
+  .banlink {
+    display: block;
+
+    br {
+      display: none;
+    }
+
+    &:first-line {
+      font-size: 1%;
+    }
+
+    b:before {
+      content: '\aRespawn in ';
+      display: inline;
+      white-space: pre;
+      font-weight: normal;
+
+    }
+    &:hover b:before {
+      color: #A7392B !important;
+    }
+  }
+
+  //.banlink br{display:none}.banlink{display:block} .banlink::first-line, .bclast::first-line{color:red;font-size:0} .banlink b:before{content:'\aRespawn in ';display:block;float:left;font-weight:normal;font-size:10px}
+
+}
+
+.forum_268 {
+  // Chilled By
+
+  .threadlist thead .lastpost a:first-of-type {
+    position: absolute;
+    visibility: hidden;
+
+    &:before {
+      content: 'Chilled By';
+      visibility: visible;
+    }
+  }
+
 }

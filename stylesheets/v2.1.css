@@ -29,3 +29,36 @@
 .forum_267 .bbc-spoiler a {
   color: transparent;
 }
+.forum_267 .title .banlink img[src$="fi.somethingawful.com/customtitles/title-probation.png"] {
+  background: url(http://pasta.rd14.net/2014-05/probotnik.png) center no-repeat;
+  width: 0;
+  height: 0;
+  padding: 0 150px 102px 0;
+}
+.forum_267 .banlink {
+  display: block;
+}
+.forum_267 .banlink br {
+  display: none;
+}
+.forum_267 .banlink:first-line {
+  font-size: 1%;
+}
+.forum_267 .banlink b:before {
+  content: '\aRespawn in ';
+  display: inline;
+  white-space: pre;
+  font-weight: normal;
+}
+.forum_267 .banlink:hover b:before {
+  color: #A7392B !important;
+}
+
+.forum_268 .threadlist thead .lastpost a:first-of-type {
+  position: absolute;
+  visibility: hidden;
+}
+.forum_268 .threadlist thead .lastpost a:first-of-type:before {
+  content: 'Chilled By';
+  visibility: visible;
+}
