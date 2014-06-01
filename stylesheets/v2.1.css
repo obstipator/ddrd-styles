@@ -29,28 +29,79 @@
 .forum_267 .bbc-spoiler a {
   color: transparent;
 }
+.forum_267 #forum .thread .rating {
+  padding: 0;
+}
+.forum_267 #forum .thread .rating img {
+  width: 0;
+  height: 0;
+  padding: 0 40px 36px 8px;
+  height: 100%;
+  display: inline-block;
+}
+.forum_267 div.threadrate ul.rating_buttons {
+  height: 36px;
+  width: auto;
+  background: none;
+  margin: 0 0 0 6px;
+}
+.forum_267 div.threadrate ul.rating_buttons li {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  color: transparent;
+}
+.forum_267 .thread .rating img[src$="1stars.gif"], .forum_267 .rating_buttons li:nth-child(1) {
+  background: url("data:image/gif;base64,R0lGODlhIAAkAKIAALOZquXm5x4aG15ZXJGIjnlwdjs3OcTExSH5BAAAAAAALAAAAAAgACQAAAP/CLrc/s7IKQm8TuitLSMgiC2GIG3GQhQlJxSjdnbDrBUWUQ4Yy/GtTSFAJBJMmKMMUJBtDsXiEQYJngy+VzQ6EECastbhIN4WAa9HkHPovrBmosShdAncd1M80PQwaiYDOHUoRQcAZwJ+fwJQZ4MhAAR8BoZpGZN7AVAGBAd3UQY8DU2OcZ1tAYIDpjUOpWaSaGNQA3xDRK6kjWecBYKGUGSOXVQLpWMBBpzJcQVDZBqjCkcHFmREiJrKADzRDZ041lsAO+SKuYqMoMGqoplRnukRGtqfttuW08fScl75m5QsWgBoDDqAboypsWUqX5d9D45oA6jqEoYaDbd1GQjBOFU8VmZKjGCU6RM7SylG8ssEImMThSq7ZESpMkIlZxZrUjtZpAlEnUyQSPLxEyiTNViMXliBY0QCADs=") no-repeat center #b498a9;
+}
+.forum_267 .thread .rating img[src$="2stars.gif"], .forum_267 .rating_buttons li:nth-child(2) {
+  background: url("data:image/gif;base64,R0lGODlhIAAkAKIAAJCoveXm50dHSyMgIsfIyoePmG1yeAAAACH5BAAAAAAALAAAAAAgACQAAAP/CLrc/jDKGUsxRmhhLH2FMIzDJo5c8QFhqRJBHBPEhaqSUQJy7we1EQ40MPyOPYJo2CgBC8io6KGDEQYwXyH7uxocRRkH2MtEdY3CgBfTBUKzgAB6BKwZ1VmGN5fTBFY+dkxuMVsERko1Am9GGD1qDYUBBoEBLJSOWwJslHcLhYhRW5Q0lTEakgMxmFEyXEBFqm2drjMwkbN+tmV8Xw0if6wYHWc0nwsnHIxKJDyIpGJynAxqgGpGw1wndEpqTCxOb3R1IoBvKA/ivD4nv8BY7O0aA+Dh5/I9du/VItlKlWDVkQUhmCEUJgTKqVeh3isaADD0AfKHoQQNvK6Q4BchJEwUjR1WhMvWRYjIBdYEqrF4UkGLORHNtaRywsXMCvZu6mSQAAA7") no-repeat center #8fa7bd;
+}
+.forum_267 .thread .rating img[src$="3stars.gif"], .forum_267 .rating_buttons li:nth-child(3) {
+  background: url("data:image/gif;base64,R0lGODlhIAAkAKIAAOTl5h8bHLq5t1NQSIuJd8fEh8C9gwAAACH5BAAAAAAALAAAAAAgACQAAAP/aLqs9bDJyWCRj2qTyRhBKA4EtzUXKAbft5bXmYakANy4QIhERs0BG2443LFMk4JKSGzeQANkxRAiOK83wTG2KOwGV6ZTO+A6QNamNg3wEHe9CkgMILUDuaCYZVYG33p/AFoCA0wgUn5qLHVsAXA4cFyKbwQENoceVlZokyBNdk2XdoadXZ9Ehlh2lkdygll4gy0CtXU2PH1zQx9PNHeXgzRmHJCxQrXIITYej8ReLCQeYJHUwmk7Ug5GLFVDy4WDmHwYRpjWN25fOKYo61ixaWQ/7/CDsc5JBmhqV+1JRkI9QRerjIx9y9jB2pRPhh827+YgIkYvoS8XpQJoOwGFLdcvMhQ1QHs0xFadhie6GGETKcTGlCNVDVoZEmYzGiNqpjQxrcrLnSgm6VyQAAA7") no-repeat center #c1be83;
+}
+.forum_267 .thread .rating img[src$="4stars.gif"], .forum_267 .rating_buttons li:nth-child(4) {
+  background: url("data:image/gif;base64,R0lGODlhIAAkAKIAAOPj5MmATiQfH5djQK6qqXp1c1ZGPQAAACH5BAAAAAAALAAAAAAgACQAAAP/GLrc/jC2MaSkw2hdjTCVxQxCWW5mGopKpgkFAQBE4RmFkFFs4OKyGa0A8JgsrphwyTQZJDemdJn7RIwp3HRJMK5GmZJyKyWUvgsPkSysUa2jj6y2phoAufqsFE/BggVEOTUCQUseCyQpeoNmBF0zgYc6LTokRI94hQCba2aMlAx/HjKehpEwb1+XJzOZrqc2bw0mGTJRNK1CeogMGgqFZgaGRoancA4kkRqCgZtlyBMCNHe5a7JtqGiiNY9Ew5LVrjEnV0CQ4N9N4NFxWnvVkFyu7b4wgTg2eVvCESSPrwDimZJjmy9xb57tqucAxg0sqVCVE0FKTRCFHgxG2PTMLBE9AT3SCNqkQciZkAo8zMAS5AbKBR/GzZn40ocYgEae1Ezk5+TOCRg0MkgAADs=") no-repeat center #c8804e;
+}
+.forum_267 .thread .rating img[src$="5stars.gif"], .forum_267 .rating_buttons li:nth-child(5) {
+  background: url("data:image/gif;base64,R0lGODlhIAAkAKIAAK4lJebm546EhSwfH20hIVlQUbu1tQAAACH5BAAAAAAALAAAAAAgACQAAAP/CLrc/jDKuYhtZGBNVR4DUYUZ8HUjCFpqK1qnRBRGoQpDoRuqvsoZQ0BgIAoFAR6yJpp8CoGodBrFhR7PQoYmHHaTUoHAFiEgh9BqLsobdNuwC2M95dHCoHfSdjX1zmxfdV84ciNpVGM7indDIFh5dTliNlw4gIUMHwOAAZxTnTxCNSqaM4RQNYlROnuPc5FRbkmzbLM4UkyaOW+1XWe/A1U+HLFSn7nIangqHzMFwJxFZ9BsjUQkTQrKjmKEYsp8fQu1w1TJgFom2tudlUSBjGrsDW6o02KUozb0DiBpqqgExIEiCCto0yqx6hehlpUWyNQVBJhDhw9bKMj96nRGJwBDGYh0EIEXQGJGAHSSGFFzcg4iUBxaeuAFU6aDLK9s3oShsyeDBAA7") no-repeat center #af2525;
+}
+.forum_267 .threadbar.bottom {
+  padding: 7px;
+}
+.forum_267 .threadbar.bottom img.thread_bookmark {
+  padding-bottom: 25px;
+  width: 25px;
+  margin: 0;
+}
+.forum_267 .title .banlink img[src$="fi.somethingawful.com/images/title-banned.gif"] {
+  background: url(http://pasta.rd14.net/2014-05/big-boned.png) center no-repeat;
+  width: 0;
+  height: 0;
+  padding: 0 168px 116px 0;
+}
 .forum_267 .title .banlink img[src$="fi.somethingawful.com/customtitles/title-probation.png"] {
   background: url(http://pasta.rd14.net/2014-05/probotnik.png) center no-repeat;
   width: 0;
   height: 0;
   padding: 0 150px 102px 0;
 }
-.forum_267 .banlink {
+.forum_267 .banlink:not([title]) {
   display: block;
 }
-.forum_267 .banlink br {
+.forum_267 .banlink:not([title]) br {
   display: none;
 }
-.forum_267 .banlink:first-line {
+.forum_267 .banlink:not([title]):first-line {
   font-size: 1%;
 }
-.forum_267 .banlink b:before {
+.forum_267 .banlink:not([title]) b:before {
   content: '\aRespawn in ';
   display: inline;
   white-space: pre;
   font-weight: normal;
 }
-.forum_267 .banlink:hover b:before {
+.forum_267 .banlink:not([title]):hover b:before {
   color: #A7392B !important;
 }
 
