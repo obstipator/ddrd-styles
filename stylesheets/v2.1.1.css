@@ -1,17 +1,9 @@
-/* copyright 2070 - obstipator . do not steal ! ! !
- * http://forums.somethingawful.com/member.php?action=getinfo&userid=157805
- * This has all the novelty game related cool shit for YCS
- *
- * I'd like to give a shoutout to all the videogame characters that come to life for my birthday.
- *
- * I also wanna thank the fuckmods for uploading this stylesheet and nothing else :twisted:
- */
 body.forum_267 {
-  background: url(http://pasta.rd14.net/2014-04/bgYoshi.jpg) #cedbf0;
+  background: url(http://fi.somethingawful.com/images/ddrd-bgYoshi.jpg) #cedbf0;
 }
 
 .forum_267 #container {
-  background: url(http://pasta.rd14.net/2014-04/bgYoshiBottom.png) repeat-x bottom;
+  background: url(http://fi.somethingawful.com/images/ddrd-bgYoshiBottom.png) repeat-x bottom;
   padding-bottom: 50px;
 }
 .forum_267 #copyright a {
@@ -129,10 +121,10 @@ body#something_awful.forum_267 #copyright {
   }
 }
 
-.forum_267 a:hover, .forum_267 .rating_buttons li:hover {
+.forum_267 a:hover, .forum_267 .rating_buttons li:hover, .forum_267 .posticon img:hover {
   position: relative;
 }
-.forum_267 a:hover:before, .forum_267 .rating_buttons li:hover:before {
+.forum_267 a:hover:before, .forum_267 .rating_buttons li:hover:before, .forum_267 .posticon img:hover:before {
   pointer-events: none;
   position: absolute;
   content: '';
@@ -148,7 +140,7 @@ body#something_awful.forum_267 #copyright {
   -o-animation: hand 0.5s linear infinite alternate;
   animation: hand 0.5s linear infinite alternate;
 }
-.forum_267 .alertbutton a, .forum_267 .postbuttons a, .forum_267 .thread .icon a {
+.forum_267 .alertbutton a, .forum_267 .postbuttons a, .forum_267 .thread .icon a, .forum_267 .thread_tags a.if {
   display: inline-block;
 }
 .forum_267 #thread dl.userinfo dt.author.role-mod {
@@ -161,6 +153,10 @@ body#something_awful.forum_267 #copyright {
 }
 .forum_267 .thread td.title_sticky a.thread_title, .forum_267 .author.op:before {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAgMAAABinRfyAAAADFBMVEX///8AAABSxhj///9KjO+oAAAAAXRSTlMAQObYZgAAAFtJREFUeF4lxLERQDAYgNFPkTMBOrNkhBT+lpohWMISNGkoXVZQ6E3hcpc7iULzoGgga3eNis5QBjtTr+tGZ8PD5OL7M7p4MNiw0Iv0iL+Fyt8XeUonKiVDJqI/X4gkPOes9IQAAAAASUVORK5CYII=) no-repeat;
+  padding-left: 20px;
+}
+.forum_267 .thread td a.announcement {
+  background: url(data:image/gif;base64,R0lGODlhEAAQAKIGACkpKSkIhJSt/5Qx7/////+1hAAAAAAAACH5BAEAAAYALAAAAAAQABAAAANXaKrQvtC0QGuLgA7BxaDAkgVbx31BKJFc0J7pylKti07DRgt0nma5kin4I+VqJ9+EVGkyiyCH1LICFKyFrDWjkhQIDQIYQLhCrGIyWGw+f8XwNkb6WCQAADs=) no-repeat;
   padding-left: 20px;
 }
 .forum_267 .author.op:before {
@@ -216,7 +212,7 @@ body#something_awful.forum_267 #copyright {
 .forum_267 #copyright:before {
   content: '';
   display: inline-block;
-  background: url(http://pasta.rd14.net/2014-04/hammock4.gif) no-repeat left top;
+  background: url(http://fi.somethingawful.com/images/ddrd-hammock4.gif) no-repeat left top;
   pointer-events: none;
   position: absolute;
   top: -35px;
@@ -243,6 +239,9 @@ body#something_awful.forum_267 #copyright {
   display: inline-block;
   padding-left: 24px;
 }
+.forum_267 .postbody a {
+  word-break: keep-all;
+}
 .forum_267 .bbc-spoiler {
   text-shadow: none;
   color: transparent;
@@ -254,139 +253,55 @@ body#something_awful.forum_267 #copyright {
   outline: none;
   color: #111;
 }
-.forum_267 #thread .post .quote_link[href$="420"] {
+.forum_267 .bbc-spoiler a {
+  color: transparent;
+}
+.forum_267 .title .banlink img[src$="fi.somethingawful.com/images/title-banned.gif"] {
+  background: url(http://pasta.rd14.net/2014-05/big-boned.png) center no-repeat;
+  width: 0;
+  height: 0;
+  padding: 0 168px 116px 0;
+}
+.forum_267 .title .banlink img[src$="fi.somethingawful.com/customtitles/title-probation.png"] {
+  background: url(http://pasta.rd14.net/2014-05/probotnik.png) center no-repeat;
+  width: 0;
+  height: 0;
+  padding: 0 150px 102px 0;
+}
+.forum_267 .quote_link[href$="420"], .forum_267 .quote_link[href$="069"] {
   position: static;
 }
-.forum_267 #thread .post .quote_link[href$="420"]:after {
-  content: "You Found: " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXBAMAAAAMzfkgAAAAJFBMVEX////39/fnxpRKORhCQkrva7X3QkKUlJxKISG9vcaEISFzc4RR+YyQAAAAAXRSTlMAQObYZgAAAKpJREFUeF6Fy7EKwjAQx+GDdugaUMS1TyAW9w6BPkEqPkAO7VZQQu3SQSRrQZC8gJSMXXw9z9jY4uJv+MPHcTAUaZiku2aCK47HSEvcN19ZmRdeXKPI8eIQ8o+61CEzZ5SIHXdgbG4faHckAmUKe2C3FHjJfDMS+5V5ox20UC1N5VQu655+62dLCjPVx8rc+7giBdlJiK1SNEeAYCN8CWkd+/4pGQOAESt4AQWWPMukF4bRAAAAAElFTkSuQmCC) " Magic Cake (Very Rare)";
+.forum_267 .quote_link[href$="420"]:after, .forum_267 .quote_link[href$="069"]:after {
   margin: 0 0 0 100px;
   display: inline-block;
   position: absolute;
   white-space: nowrap;
   vertical-align: top;
 }
-
-.forum_219 #thread .userid-17106 dt.author {
-  padding-left: 18px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACGUlEQVR4Xp3QyWsTbwDH4c87M5lMkkkmUyEt6eYSi1q0qHWhsQouFSkEbaVWvHhwOUih9NSCPxA86Uk9WBE8VTx4aMWK4H4oiFDEVNDWupJu0JhYjfWXrTPe9GAX6+cPeOD7Zb6iJ7XT0ePKGf6l601myUQrdrwNu2u/dxlzJDFHVll4t1S8FjtYib18e92iAXvLiUj8wB1G62+TqT4WWRRw7mKn7vMX7LCFgpAceHRf+PylTj+zpDBLS6JXa4qNugKnuh5VhpKxfiPV/6gW6P0rwEgORoL9L/BFQTXAiMPYpDMC9C444fLhCtlnp/fKCtiABahu8FqZPVeOrHIsCExtaq2c2dAQyhtLmXHo5GWdrFFGrqq+/Et1y7p5gffXGk2v/bkxXdPGaKSbjwfv827fA97sukkq3IL8/2RDz6k15qxA7MbRbdrTnpiR/PCfw+VhRqhknCZZ1cSSNBTNhTr5qSMw9Dr2sH3rzj9O1BIDTfFpS/cPdBMISEgrwtjuAJIs8KQmKB3qQ7y6JX7k0QPZeDPwGEAAjD85K3ueXxhKvE2ERkagyA9uDRRF4HALZGHxLQHD41BcAkWrjViutiNUWNOeUwBcTFU5lUQoWAGmH9IpEHmQbBspZyM08BbB5lJwFYLQvpbltOmNwDMFQM/2NSsrgwA4y4HvAIAFiN9D8QA6IIOSvnvoF3Cv6+WwmU+zmDK+5CDAT+xlp+smUne2AAAAAElFTkSuQmCC) no-repeat left 2px;
+.forum_267 .quote_link[href$="420"]:after {
+  content: "You Found: " url(data:image/gif;base64,R0lGODlhGgAXALMPAN+PNqtbMtl1LteBMr9lLNJsKsqCU7hwRM5/Ob5aI99/MMVsMc92LtBjIOOHKKhaNSH5BAEAAA8ALAAAAAAaABcAAATJ8MlJ6wsECbWsnwHGOCQJfJXIAIADDCWCXsRSuCygKBt7eAGDobBTuHgvhe7lIRQaDcJGySq0XAIHwWMrCDZTxWAxYAwAm0DTe9wNNgMOAi1QWwIJ6tsGXyD+Cwx2dw1eBARxOgwLAgULCwSDd4YEVAUjaAWHkhYGDQIsAwVxPI2anBYHo2UCpIsvqHcHZmcrA2djsUCrtAAMl7pAuLc5A8FNZ6Ghx3cLoSsIAzMfB5ABZX/TH3gBiww/2h4HDYuR4dsBC8zaIboRADs=) " Magic Dorito (Very Rare)";
+}
+.forum_267 .quote_link[href$="069"]:after {
+  content: "You Found: " url(data:image/gif;base64,R0lGODlhRQAXALMPANfcyyJTMImsQqG2QE6TR3ejQ9PUfZ21b2acRlJ+QNBqbjB4Q3eTcb7GRKq2nSBZMyH5BAEAAA8ALAAAAABFABcAAAT/8L1Aw6JX6s1nkFUojmNngkGSLCxLECT6VUm1EAtSJEzv/70EQiBAUE6cRGMw2K0WBUGhFb1YEEbXQZAg6ISDg8PBGJvPBqlX8EFqCnCEF7FKROVDwcHbPOAFA0VRXAgNZ2YAiYoATICBbW55anBdg0ONg0SagY5MBAUNfgYHBQcHBgaLBo0CDQ1sbg9KrnBwLwWNA65MTEu8RLquAgStBwwGDgcAp4sAq4EIAwYNBZAmBA3Tr7Yvur2u4OG82alyrQLJCgqHDolLRFjZDQkyIbKOtFj63sHh4KnZEjnAAqgdA3UKGPAQ464RlmBsKNjBAodClE/QdOCJ8s2fK220/+AQKcPgAMIyZMbwChRl14sFdjQVCTDlho4CGl+8uNRv3K84g3IYO1lmnYNO4155qVRLihwvtXBi0TmVIJGmLGtRLLIgpTqS6o5+QzWtgBeYV+HhuCkljs5P+jK1HdRUn56SJU+OWYcPVaI0WNDKrHkzitSdFCneiQo0DkUxY4omRLll7N8idBLIJBKAQFapeBQrVqNvCOipeiIncBC2pMqO2p4K1jSFGKomhYF5HLBVl0jQuH4QOBjWjK9XK3fO1pRgZVsiS1KBBPcHlci20Xb1KnCwnaJnvDHytmInkxDMT0UyMwDHVehbTeY4ZmLKuzGUqZzxWqurhocRzeFA1ZJDo9zw1i2I5VAaQWFARoYP+elHxFpLWNOBZji4cGALHL5k4IE4fUKMMZGJgUx9DmxjlmfzWMiBPjh08QSHNN5QYwtn4SAAMmYwI9BlQFHjYhKOyHHjkUjSqAeJPzYDgCDnDMlBChlySMKVGFxQIwI9DPdgGQC0k8w4/sVSD41HoIDEESGwgEEKNlgQghA1SNlBBAA7) " Magic Mtn Dew (Very Rare)";
+}
+.forum_268 .threadlist thead .lastpost a:first-of-type {
+  visibility: hidden;
+  font-size: 0;
+}
+.forum_268 .threadlist thead .lastpost a:first-of-type:before {
+  content: 'Chilled By';
+  visibility: visible;
+  background-color: #455A63;
+  font-size: 10px;
 }
 
-.forum_188 #thread .userid-182864 dl.userinfo dt.author {
-  color: rgba(0, 0, 0, 0.5);
-  text-shadow: 4px 0px 1px cyan, -2px 0px 1px red, -2px 0px 1px red, 4px 0px 1px cyan;
+.forum_26 #copyright:after {
+  content: '';
+  display: inline-block;
+  width: 125px;
+  height: 42px;
+  background: url(http://fi.somethingawful.com/flags/91/47/0000063708.gif) center no-repeat;
+  background-size: 125px 42px;
 }
 
-@-moz-keyframes freakFlagFly {
-  0% {
-    padding: 0;
-  }
 
-  20% {
-    padding: 0;
-  }
-
-  80% {
-    padding: 50px 125px;
-  }
-
-  100% {
-    padding: 50px 125px;
-  }
-}
-
-@-webkit-keyframes freakFlagFly {
-  0% {
-    padding: 0;
-  }
-
-  20% {
-    padding: 0;
-  }
-
-  80% {
-    padding: 50px 125px;
-  }
-
-  100% {
-    padding: 50px 125px;
-  }
-}
-
-@-o-keyframes freakFlagFly {
-  0% {
-    padding: 0;
-  }
-
-  20% {
-    padding: 0;
-  }
-
-  80% {
-    padding: 50px 125px;
-  }
-
-  100% {
-    padding: 50px 125px;
-  }
-}
-
-@-ms-keyframes freakFlagFly {
-  0% {
-    padding: 0;
-  }
-
-  20% {
-    padding: 0;
-  }
-
-  80% {
-    padding: 50px 125px;
-  }
-
-  100% {
-    padding: 50px 125px;
-  }
-}
-
-@keyframes freakFlagFly {
-  0% {
-    padding: 0;
-  }
-
-  20% {
-    padding: 0;
-  }
-
-  80% {
-    padding: 50px 125px;
-  }
-
-  100% {
-    padding: 50px 125px;
-  }
-}
-
-#flag_container img[src$="?by=forums%20poster"], #flag_container img[src$="?by=Shit%20Man"], #flag_container img[src$="?by=Jingai%20Jigokumoto"] {
-  display: block;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url(http://pasta.rd14.net/2014-03/flagSpammer3.gif) no-repeat black;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  width: 250px;
-  /* Width of new image */
-  height: 100px;
-  /* Height of new image */
-  -webkit-animation: freakFlagFly 5s linear infinite alternate;
-  -moz-animation: freakFlagFly 5s linear infinite alternate;
-  -ms-animation: freakFlagFly 5s linear infinite alternate;
-  -o-animation: freakFlagFly 5s linear infinite alternate;
-  animation: freakFlagFly 5s linear infinite alternate;
-}
-
-.title img {
-  vertical-align: bottom;
-}

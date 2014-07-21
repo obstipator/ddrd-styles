@@ -8,6 +8,8 @@
  * then send it off to the powers that be.
  */
 
+//@include keyframePrefixedX('filter', 'bossAura', drop-shadow(0px 0px 3px #205), drop-shadow(0px -20px 8px #95d));
+
 .forum_267 {
 
   // make announcement threads into a poison mushroom
@@ -16,18 +18,25 @@
     padding-left: 20px;
   }
 
-  // show cake while on preview page as well
-  .quote_link[href$="420"] {
+  // show dorito/mtndew while on preview page as well
+  .quote_link[href$="420"], .quote_link[href$="069"] {
     position: static;
 
     &:after {
-      content: 'You Found: ' url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAXBAMAAAAMzfkgAAAAJFBMVEX////39/fnxpRKORhCQkrva7X3QkKUlJxKISG9vcaEISFzc4RR+YyQAAAAAXRSTlMAQObYZgAAAKpJREFUeF6Fy7EKwjAQx+GDdugaUMS1TyAW9w6BPkEqPkAO7VZQQu3SQSRrQZC8gJSMXXw9z9jY4uJv+MPHcTAUaZiku2aCK47HSEvcN19ZmRdeXKPI8eIQ8o+61CEzZ5SIHXdgbG4faHckAmUKe2C3FHjJfDMS+5V5ox20UC1N5VQu655+62dLCjPVx8rc+7giBdlJiK1SNEeAYCN8CWkd+/4pGQOAESt4AQWWPMukF4bRAAAAAElFTkSuQmCC) ' Magic Cake (Very Rare)';
       margin: 0 0 0 100px;
       display: inline-block;
       position: absolute;
       white-space: nowrap;
       vertical-align: top;
     }
+  }
+
+  .quote_link[href$="420"]:after {
+    content: 'You Found: ' url(data:image/gif;base64,R0lGODlhGgAXALMPAN+PNqtbMtl1LteBMr9lLNJsKsqCU7hwRM5/Ob5aI99/MMVsMc92LtBjIOOHKKhaNSH5BAEAAA8ALAAAAAAaABcAAATJ8MlJ6wsECbWsnwHGOCQJfJXIAIADDCWCXsRSuCygKBt7eAGDobBTuHgvhe7lIRQaDcJGySq0XAIHwWMrCDZTxWAxYAwAm0DTe9wNNgMOAi1QWwIJ6tsGXyD+Cwx2dw1eBARxOgwLAgULCwSDd4YEVAUjaAWHkhYGDQIsAwVxPI2anBYHo2UCpIsvqHcHZmcrA2djsUCrtAAMl7pAuLc5A8FNZ6Ghx3cLoSsIAzMfB5ABZX/TH3gBiww/2h4HDYuR4dsBC8zaIboRADs=) ' Magic Dorito (Very Rare)';
+
+  }
+  .quote_link[href$="069"]:after {
+    content: 'You Found: ' url(data:image/gif;base64,R0lGODlhRQAXALMPANfcyyJTMImsQqG2QE6TR3ejQ9PUfZ21b2acRlJ+QNBqbjB4Q3eTcb7GRKq2nSBZMyH5BAEAAA8ALAAAAABFABcAAAT/8L1Aw6JX6s1nkFUojmNngkGSLCxLECT6VUm1EAtSJEzv/70EQiBAUE6cRGMw2K0WBUGhFb1YEEbXQZAg6ISDg8PBGJvPBqlX8EFqCnCEF7FKROVDwcHbPOAFA0VRXAgNZ2YAiYoATICBbW55anBdg0ONg0SagY5MBAUNfgYHBQcHBgaLBo0CDQ1sbg9KrnBwLwWNA65MTEu8RLquAgStBwwGDgcAp4sAq4EIAwYNBZAmBA3Tr7Yvur2u4OG82alyrQLJCgqHDolLRFjZDQkyIbKOtFj63sHh4KnZEjnAAqgdA3UKGPAQ464RlmBsKNjBAodClE/QdOCJ8s2fK220/+AQKcPgAMIyZMbwChRl14sFdjQVCTDlho4CGl+8uNRv3K84g3IYO1lmnYNO4155qVRLihwvtXBi0TmVIJGmLGtRLLIgpTqS6o5+QzWtgBeYV+HhuCkljs5P+jK1HdRUn56SJU+OWYcPVaI0WNDKrHkzitSdFCneiQo0DkUxY4omRLll7N8idBLIJBKAQFapeBQrVqNvCOipeiIncBC2pMqO2p4K1jSFGKomhYF5HLBVl0jQuH4QOBjWjK9XK3fO1pRgZVsiS1KBBPcHlci20Xb1KnCwnaJnvDHytmInkxDMT0UyMwDHVehbTeY4ZmLKuzGUqZzxWqurhocRzeFA1ZJDo9zw1i2I5VAaQWFARoYP+elHxFpLWNOBZji4cGALHL5k4IE4fUKMMZGJgUx9DmxjlmfzWMiBPjh08QSHNN5QYwtn4SAAMmYwI9BlQFHjYhKOyHHjkUjSqAeJPzYDgCDnDMlBChlySMKVGFxQIwI9DPdgGQC0k8w4/sVSD41HoIDEESGwgEEKNlgQghA1SNlBBAA7) ' Magic Mtn Dew (Very Rare)';
   }
 
   // fixed alignment of glove on post icon filters
@@ -37,7 +46,7 @@
 
   // make glove show up on new thread post icons
   .posticon img {
-    // todo: @extend glove
+    /* todo: @extend glove */
   }
 
   // fix glove hover on dumb as hell firefox links that wrap weird
@@ -57,69 +66,63 @@
   }
 
   // change ratings?
-  #forum .thread .rating {
-    padding: 0;
-
-    img {
-      $pads: 8px;
-      width: 0;
-      height: 0;
-      padding: 0 (32px + $pads) 36px $pads;
-      height: 100%;
-      display: inline-block;
-    }
-  }
-
-  div.threadrate ul.rating_buttons {
-    height: 36px;
-    width: auto;
-    background: none;
-    margin: 0 0 0 6px;
-
-    li {
-      //width: 32px;
-      //height: 36px;
-      //width: 20px;
-      //height: 22px;
-      //width: 26px;
-      //height: 28px;
-      //width: 24px;
-      //height: 24px;
-      //background-size: 100%;
-      //width: 21px;
-      //height: 23px;
-      width: 24px;
-      height: 24px;
-      background-size: cover;
-      color: transparent;
-    }
-  }
-
-  $ratingColors: #b498a9, #8fa7bd, #c1be83, #c8804e, #af2525;
-  $ratingImages:
-  "data:image/gif;base64,R0lGODlhIAAkAKIAALOZquXm5x4aG15ZXJGIjnlwdjs3OcTExSH5BAAAAAAALAAAAAAgACQAAAP/CLrc/s7IKQm8TuitLSMgiC2GIG3GQhQlJxSjdnbDrBUWUQ4Yy/GtTSFAJBJMmKMMUJBtDsXiEQYJngy+VzQ6EECastbhIN4WAa9HkHPovrBmosShdAncd1M80PQwaiYDOHUoRQcAZwJ+fwJQZ4MhAAR8BoZpGZN7AVAGBAd3UQY8DU2OcZ1tAYIDpjUOpWaSaGNQA3xDRK6kjWecBYKGUGSOXVQLpWMBBpzJcQVDZBqjCkcHFmREiJrKADzRDZ041lsAO+SKuYqMoMGqoplRnukRGtqfttuW08fScl75m5QsWgBoDDqAboypsWUqX5d9D45oA6jqEoYaDbd1GQjBOFU8VmZKjGCU6RM7SylG8ssEImMThSq7ZESpMkIlZxZrUjtZpAlEnUyQSPLxEyiTNViMXliBY0QCADs=",
-  "data:image/gif;base64,R0lGODlhIAAkAKIAAJCoveXm50dHSyMgIsfIyoePmG1yeAAAACH5BAAAAAAALAAAAAAgACQAAAP/CLrc/jDKGUsxRmhhLH2FMIzDJo5c8QFhqRJBHBPEhaqSUQJy7we1EQ40MPyOPYJo2CgBC8io6KGDEQYwXyH7uxocRRkH2MtEdY3CgBfTBUKzgAB6BKwZ1VmGN5fTBFY+dkxuMVsERko1Am9GGD1qDYUBBoEBLJSOWwJslHcLhYhRW5Q0lTEakgMxmFEyXEBFqm2drjMwkbN+tmV8Xw0if6wYHWc0nwsnHIxKJDyIpGJynAxqgGpGw1wndEpqTCxOb3R1IoBvKA/ivD4nv8BY7O0aA+Dh5/I9du/VItlKlWDVkQUhmCEUJgTKqVeh3isaADD0AfKHoQQNvK6Q4BchJEwUjR1WhMvWRYjIBdYEqrF4UkGLORHNtaRywsXMCvZu6mSQAAA7",
-  "data:image/gif;base64,R0lGODlhIAAkAKIAAOTl5h8bHLq5t1NQSIuJd8fEh8C9gwAAACH5BAAAAAAALAAAAAAgACQAAAP/aLqs9bDJyWCRj2qTyRhBKA4EtzUXKAbft5bXmYakANy4QIhERs0BG2443LFMk4JKSGzeQANkxRAiOK83wTG2KOwGV6ZTO+A6QNamNg3wEHe9CkgMILUDuaCYZVYG33p/AFoCA0wgUn5qLHVsAXA4cFyKbwQENoceVlZokyBNdk2XdoadXZ9Ehlh2lkdygll4gy0CtXU2PH1zQx9PNHeXgzRmHJCxQrXIITYej8ReLCQeYJHUwmk7Ug5GLFVDy4WDmHwYRpjWN25fOKYo61ixaWQ/7/CDsc5JBmhqV+1JRkI9QRerjIx9y9jB2pRPhh827+YgIkYvoS8XpQJoOwGFLdcvMhQ1QHs0xFadhie6GGETKcTGlCNVDVoZEmYzGiNqpjQxrcrLnSgm6VyQAAA7",
-  "data:image/gif;base64,R0lGODlhIAAkAKIAAOPj5MmATiQfH5djQK6qqXp1c1ZGPQAAACH5BAAAAAAALAAAAAAgACQAAAP/GLrc/jC2MaSkw2hdjTCVxQxCWW5mGopKpgkFAQBE4RmFkFFs4OKyGa0A8JgsrphwyTQZJDemdJn7RIwp3HRJMK5GmZJyKyWUvgsPkSysUa2jj6y2phoAufqsFE/BggVEOTUCQUseCyQpeoNmBF0zgYc6LTokRI94hQCba2aMlAx/HjKehpEwb1+XJzOZrqc2bw0mGTJRNK1CeogMGgqFZgaGRoancA4kkRqCgZtlyBMCNHe5a7JtqGiiNY9Ew5LVrjEnV0CQ4N9N4NFxWnvVkFyu7b4wgTg2eVvCESSPrwDimZJjmy9xb57tqucAxg0sqVCVE0FKTRCFHgxG2PTMLBE9AT3SCNqkQciZkAo8zMAS5AbKBR/GzZn40ocYgEae1Ezk5+TOCRg0MkgAADs=",
-  "data:image/gif;base64,R0lGODlhIAAkAKIAAK4lJebm546EhSwfH20hIVlQUbu1tQAAACH5BAAAAAAALAAAAAAgACQAAAP/CLrc/jDKuYhtZGBNVR4DUYUZ8HUjCFpqK1qnRBRGoQpDoRuqvsoZQ0BgIAoFAR6yJpp8CoGodBrFhR7PQoYmHHaTUoHAFiEgh9BqLsobdNuwC2M95dHCoHfSdjX1zmxfdV84ciNpVGM7indDIFh5dTliNlw4gIUMHwOAAZxTnTxCNSqaM4RQNYlROnuPc5FRbkmzbLM4UkyaOW+1XWe/A1U+HLFSn7nIangqHzMFwJxFZ9BsjUQkTQrKjmKEYsp8fQu1w1TJgFom2tudlUSBjGrsDW6o02KUozb0DiBpqqgExIEiCCto0yqx6hehlpUWyNQVBJhDhw9bKMj96nRGJwBDGYh0EIEXQGJGAHSSGFFzcg4iUBxaeuAFU6aDLK9s3oShsyeDBAA7"
-;
-  @for $i from 1 through 5 {
-    .thread .rating img[src$="#{$i}stars.gif"], .rating_buttons li:nth-child(#{$i}) {
-      //background: url(http://pasta.rd14.net/2014-06/rating#{$i}.png) no-repeat center #{nth($ratingColors, $i)};
-      background: url(nth($ratingImages, $i)) no-repeat center #{nth($ratingColors, $i)};
-    }
-  }
-
-  // resize the bottom nav
-  .threadbar.bottom {
-    padding: 7px;
-
-    img.thread_bookmark {
-      padding-bottom: 25px;
-      width: 25px;
-      margin: 0
-    }
-  }
+  //#forum .thread .rating {
+  //  padding: 0;
+  //
+  //  img {
+  //    $pads: 8px;
+  //    width: 0;
+  //    height: 0;
+  //    padding: 0 (32px + $pads) 36px $pads;
+  //    height: 100%;
+  //    display: inline-block;
+  //  }
+  //}
+  //
+  //div.threadrate ul.rating_buttons {
+  //  height: 36px;
+  //  width: auto;
+  //  background: none;
+  //  margin: 0 0 0 6px;
+  //
+  //  li {
+  //    //width: 32px;
+  //    //height: 36px;
+  //    //width: 20px;
+  //    //height: 22px;
+  //    //width: 26px;
+  //    //height: 28px;
+  //    //width: 24px;
+  //    //height: 24px;
+  //    //background-size: 100%;
+  //    //width: 21px;
+  //    //height: 23px;
+  //    width: 24px;
+  //    height: 24px;
+  //    background-size: cover;
+  //    color: transparent;
+  //  }
+  //}
+  //
+  //$ratingColors: #b498a9, #8fa7bd, #c1be83, #c8804e, #af2525;
+  //$ratingImages: "data:image/gif;base64,R0lGODlhIAAkAKIAALOZquXm5x4aG15ZXJGIjnlwdjs3OcTExSH5BAAAAAAALAAAAAAgACQAAAP/CLrc/s7IKQm8TuitLSMgiC2GIG3GQhQlJxSjdnbDrBUWUQ4Yy/GtTSFAJBJMmKMMUJBtDsXiEQYJngy+VzQ6EECastbhIN4WAa9HkHPovrBmosShdAncd1M80PQwaiYDOHUoRQcAZwJ+fwJQZ4MhAAR8BoZpGZN7AVAGBAd3UQY8DU2OcZ1tAYIDpjUOpWaSaGNQA3xDRK6kjWecBYKGUGSOXVQLpWMBBpzJcQVDZBqjCkcHFmREiJrKADzRDZ041lsAO+SKuYqMoMGqoplRnukRGtqfttuW08fScl75m5QsWgBoDDqAboypsWUqX5d9D45oA6jqEoYaDbd1GQjBOFU8VmZKjGCU6RM7SylG8ssEImMThSq7ZESpMkIlZxZrUjtZpAlEnUyQSPLxEyiTNViMXliBY0QCADs=", "data:image/gif;base64,R0lGODlhIAAkAKIAAJCoveXm50dHSyMgIsfIyoePmG1yeAAAACH5BAAAAAAALAAAAAAgACQAAAP/CLrc/jDKGUsxRmhhLH2FMIzDJo5c8QFhqRJBHBPEhaqSUQJy7we1EQ40MPyOPYJo2CgBC8io6KGDEQYwXyH7uxocRRkH2MtEdY3CgBfTBUKzgAB6BKwZ1VmGN5fTBFY+dkxuMVsERko1Am9GGD1qDYUBBoEBLJSOWwJslHcLhYhRW5Q0lTEakgMxmFEyXEBFqm2drjMwkbN+tmV8Xw0if6wYHWc0nwsnHIxKJDyIpGJynAxqgGpGw1wndEpqTCxOb3R1IoBvKA/ivD4nv8BY7O0aA+Dh5/I9du/VItlKlWDVkQUhmCEUJgTKqVeh3isaADD0AfKHoQQNvK6Q4BchJEwUjR1WhMvWRYjIBdYEqrF4UkGLORHNtaRywsXMCvZu6mSQAAA7", "data:image/gif;base64,R0lGODlhIAAkAKIAAOTl5h8bHLq5t1NQSIuJd8fEh8C9gwAAACH5BAAAAAAALAAAAAAgACQAAAP/aLqs9bDJyWCRj2qTyRhBKA4EtzUXKAbft5bXmYakANy4QIhERs0BG2443LFMk4JKSGzeQANkxRAiOK83wTG2KOwGV6ZTO+A6QNamNg3wEHe9CkgMILUDuaCYZVYG33p/AFoCA0wgUn5qLHVsAXA4cFyKbwQENoceVlZokyBNdk2XdoadXZ9Ehlh2lkdygll4gy0CtXU2PH1zQx9PNHeXgzRmHJCxQrXIITYej8ReLCQeYJHUwmk7Ug5GLFVDy4WDmHwYRpjWN25fOKYo61ixaWQ/7/CDsc5JBmhqV+1JRkI9QRerjIx9y9jB2pRPhh827+YgIkYvoS8XpQJoOwGFLdcvMhQ1QHs0xFadhie6GGETKcTGlCNVDVoZEmYzGiNqpjQxrcrLnSgm6VyQAAA7", "data:image/gif;base64,R0lGODlhIAAkAKIAAOPj5MmATiQfH5djQK6qqXp1c1ZGPQAAACH5BAAAAAAALAAAAAAgACQAAAP/GLrc/jC2MaSkw2hdjTCVxQxCWW5mGopKpgkFAQBE4RmFkFFs4OKyGa0A8JgsrphwyTQZJDemdJn7RIwp3HRJMK5GmZJyKyWUvgsPkSysUa2jj6y2phoAufqsFE/BggVEOTUCQUseCyQpeoNmBF0zgYc6LTokRI94hQCba2aMlAx/HjKehpEwb1+XJzOZrqc2bw0mGTJRNK1CeogMGgqFZgaGRoancA4kkRqCgZtlyBMCNHe5a7JtqGiiNY9Ew5LVrjEnV0CQ4N9N4NFxWnvVkFyu7b4wgTg2eVvCESSPrwDimZJjmy9xb57tqucAxg0sqVCVE0FKTRCFHgxG2PTMLBE9AT3SCNqkQciZkAo8zMAS5AbKBR/GzZn40ocYgEae1Ezk5+TOCRg0MkgAADs=", "data:image/gif;base64,R0lGODlhIAAkAKIAAK4lJebm546EhSwfH20hIVlQUbu1tQAAACH5BAAAAAAALAAAAAAgACQAAAP/CLrc/jDKuYhtZGBNVR4DUYUZ8HUjCFpqK1qnRBRGoQpDoRuqvsoZQ0BgIAoFAR6yJpp8CoGodBrFhR7PQoYmHHaTUoHAFiEgh9BqLsobdNuwC2M95dHCoHfSdjX1zmxfdV84ciNpVGM7indDIFh5dTliNlw4gIUMHwOAAZxTnTxCNSqaM4RQNYlROnuPc5FRbkmzbLM4UkyaOW+1XWe/A1U+HLFSn7nIangqHzMFwJxFZ9BsjUQkTQrKjmKEYsp8fQu1w1TJgFom2tudlUSBjGrsDW6o02KUozb0DiBpqqgExIEiCCto0yqx6hehlpUWyNQVBJhDhw9bKMj96nRGJwBDGYh0EIEXQGJGAHSSGFFzcg4iUBxaeuAFU6aDLK9s3oShsyeDBAA7";
+  //@for $i from 1 through 5 {
+  //  .thread .rating img[src$="#{$i}stars.gif"], .rating_buttons li:nth-child(#{$i}) {
+  //    //background: url(http://pasta.rd14.net/2014-06/rating#{$i}.png) no-repeat center #{nth($ratingColors, $i)};
+  //    background: url(nth($ratingImages, $i)) no-repeat center #{nth($ratingColors, $i)};
+  //  }
+  //}
+  //
+  //// resize the bottom nav
+  //.threadbar.bottom {
+  //  padding: 7px;
+  //
+  //  img.thread_bookmark {
+  //    padding-bottom: 25px;
+  //    width: 25px;
+  //    margin: 0
+  //  }
+  //}
 
   //.thread .rating img[src$="5stars.gif"], .rating_buttons li:nth-child(5) {
   //  background: url(http://pasta.rd14.net/2014-06/rating5.png) no-repeat center #af2525;
@@ -141,30 +144,39 @@
   }
 
   // respawn in
-  .banlink:not([title]) {
-    display: block;
-
-    br {
-      display: none;
-    }
-
-    &:first-line {
-      font-size: 1%;
-    }
-
-    b:before {
-      content: '\aRespawn in ';
-      display: inline;
-      white-space: pre;
-      font-weight: normal;
-
-    }
-    &:hover b:before {
-      color: #A7392B !important;
-    }
-  }
+  //.banlink:not([title]) {
+  //  display: block;
+  //
+  //  br {
+  //    display: none;
+  //  }
+  //
+  //  &:first-line {
+  //    font-size: 1%;
+  //  }
+  //
+  //  b:before {
+  //    content: '\aRespawn in ';
+  //    display: inline;
+  //    white-space: pre;
+  //    font-weight: normal;
+  //
+  //  }
+  //  &:hover b:before {
+  //    color: #A7392B !important;
+  //  }
+  //}
 
   // counter-act respawn for bans
+
+  // mods/admins get final boss auras
+  //.userinfo img{
+  //  //@include filter(drop-shadow(0 0 10px #2b0061));
+  //  @include animation(bossAura 1s infinite);
+  //  @include animation-direction(alternate);
+  //  //@include animation-duration(5s);
+  //  @include filter(drop-shadow(0 0 3px #fff));
+  //}
 
 }
 
@@ -172,13 +184,24 @@
   // Chilled By
 
   .threadlist thead .lastpost a:first-of-type {
-    position: absolute;
     visibility: hidden;
+    font-size: 0;
 
     &:before {
+      //position: absolute;
       content: 'Chilled By';
       visibility: visible;
+      background-color: #455A63;
+      font-size: 10px;
+
     }
   }
-
+}
+.forum_26 #copyright:after {
+  content: '';
+  display: inline-block;
+  width: 125px;
+  height: 42px;
+  background: url(http://fi.somethingawful.com/flags/91/47/0000063708.gif) center no-repeat;
+  background-size: 125px 42px;
 }
